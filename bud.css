@@ -1,0 +1,238 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: auto;
+    font-family: ubuntu, sans-serif;
+}
+
+h1{ font-size: 1.4em;} h2{font-size: 1.3em;} h3 {font-size: 1em;}  h4{font-size: .9em;}
+
+p {
+    font-size: 0.9em;
+}	
+	
+.navtop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    padding: 15px 30px 15px 30px;
+}
+
+.navtop ul{
+    list-style-type:none;
+    display: flex;
+    padding-top: 20px;
+}
+
+.socialMedia li img{
+    width: 50px;
+    height: 50px;
+}
+
+.navtop a {
+    padding: 5px;
+
+}
+
+.navbottom {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: crimson;
+    justify-content:space-between;
+
+}
+
+.nav_links > ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 30px;
+    
+}
+
+.nav_links a {
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.nav_links a:hover{
+    color:rgb(168, 167, 167)
+
+}
+
+.nav_links li:nth-child(1) a{
+     border-left: 2px solid white;
+}
+
+.burger{
+    margin: auto;
+    display: none;
+}
+
+.line1 {
+    background-color: white;
+    width:30px;
+    margin: 5px;
+    height:5px;
+}
+
+.line2 {
+    background-color: white;
+    margin:5px;
+    width:30px;
+    height:5px;
+
+}.line3 {
+    background-color: white;
+    width:30px;
+    height:5px;
+    margin:5px;
+}
+
+.major{
+    display: flex;
+    padding: 40px 60px 30px 60px;
+}
+
+.others{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 60px 40px 60px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.others h3{
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.others h4{
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 7px;
+}
+
+.videodesc{
+    padding:30px
+}
+
+.video1{
+    text-align: center;
+}
+	
+/* Make Video iframe disappear on mobile only */
+
+@media only screen and (max-device-width: 1920px) {
+   
+    .video_mobile{
+        display:none;
+    }
+
+}
+
+@media only screen and (max-device-width: 768px) {
+    .mainvideo iframe{
+        width: 636px;
+        height: 360px;
+    }
+
+    .major{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav_links{
+        display: none;
+    }
+    
+    .burger{
+        display: block;
+    }
+
+    .burger_link{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+}
+
+@media only screen and (max-device-width: 480px) {
+	
+	 /* Make Video modal disappear on mobile only */
+
+    .others{
+        display: none;
+    
+    }
+
+    /* Make Video iframe appear on mobile only */
+    .video_mobile{
+        display:flex ;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+	
+	
+     h1{
+         font-size: 0.9em;
+     }
+
+     h2{
+        font-size: 0.7em;
+    }
+
+    h3{
+        font-size: 0.6em;
+    }
+
+    .topnav{
+        padding: 10px 0 0 100px;
+    }
+
+    .socialMedia{
+        justify-content: center;
+    }
+
+    .navbottom {
+        display: none;
+    }
+
+    .mainvideo iframe{
+        width: 350px;
+        height: 250px;
+    }
+
+    .major{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .others{
+        justify-content: center;
+    }
+	
+	.others img{
+        width: 350px;
+        height: 230px;
+    }
+	
+    .video{
+        padding-top: 30px;
+    }
+
+}
+	
